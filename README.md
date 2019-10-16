@@ -1,5 +1,7 @@
 # Neural 3D Mesh Renderer (CVPR 2018)
 
+**Note**: This repo presents a fix for the error "atomicAdd redefined" on Windows. I have tested with CUDA 10.0 and python 3.7. Thanks to my colleague, [@choiseonghwa](https://github.com/choiseonghwa), for this quick hack.
+
 This repo contains a PyTorch implementation of the paper [Neural 3D Mesh Renderer](http://hiroharu-kato.com/projects_en/neural_renderer.html) by Hiroharu Kato, Yoshitaka Ushiku, and Tatsuya Harada.
 It is a port of the [original Chainer implementation](https://github.com/hiroharu-kato/neural_renderer) released by the authors.
 Currently the API is the same as in the original implementation with some smalls additions (e.g. render using a general 3x4 camera matrix, lens distortion coefficients etc.). However it is possible that it will change in the future.
